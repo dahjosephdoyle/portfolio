@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 
 export default function Contact() {
-// useEffect(() => emailjs.init("LGzTC7ihOs2j3UsvA"), []);
-// const serviceId = "service_h26feta";
-// const templateId = "template_d25yk6b";
+useEffect(() => emailjs.init("LGzTC7ihOs2j3UsvA"), []);
+const serviceId = "service_h26feta";
+const templateId = "template_d25yk6b";
+const publicKey = "LGzTC7ihOs2j3UsvA";
 const [buttonState, setButtonState] = useState('Send Message');
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 const formik = useFormik({
@@ -27,14 +28,14 @@ const formik = useFormik({
   }),
   onSubmit: (values, {setSubmitting, resetForm}) => {
      try{
-      emailjs.send(service_h26feta , template_d25yk6b, values, LGzTC7ihOs2j3UsvA)
+      emailjs.send(serviceId , templateId, values, publicKey)
         .then(() => {
            setButtonState('Send Email');
            setSubmitting(false);
            resetForm();
               });
        }
-       catch {
+       catch (error) {
         console.log(error);
           setButtonState('Send Email');
           setSubmitting(false);

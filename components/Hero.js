@@ -33,7 +33,7 @@ export default function Hero() {
              
             </div>
           </div>
-          <div className="relative lg:col-span-6 h-screen overflow-hidden col-span-12">
+          <div className="relative aspect-square lg:col-span-6 h-screen overflow-hidden col-span-12">
             <NextImage
               className="w-full object-cover bg-gray-100"
               src='family-photo.webp'
