@@ -18,7 +18,7 @@ export default function Swimmingpool() {
             <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
               <NextImage
                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
-                src="swimmingpool-screenshot.png"
+                src="nptpool-screenshot.png"
                 alt=""
                 width={1080}
                 height={1280}
@@ -27,15 +27,15 @@ export default function Swimmingpool() {
           </div>
           <div className="px-6 lg:contents">
             <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-              <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.swimmingpool.com" className="group">
-                <h1 className="pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl border-b-4 border-b-white group-hover:border-b-4 group-hover:border-indigo-400 inline-block duration-300 group-hover:text-indigo-600">Swimmingpool.com</h1>
+              <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.nptpool.com/" className="group">
+                <h1 className="pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl border-b-4 border-b-white group-hover:border-b-4 group-hover:border-indigo-400 inline-block duration-300 group-hover:text-indigo-600">NPTpool.com</h1>
               </Link>
 
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              Explore the world of Swimmingpool.com—a web development project using Jekyll, Bootstrap, and Jenkins. This portfolio piece demonstrates the integration of these technologies for a dynamic static site that connects users with industry professionals through a lead generation platform. Created in 2020, Swimmingpool.com showcases cutting-edge technology and innovative engineering.
+              Discover NPTpool.com, POOLCORP's exclusive 2020 creation, blending Jekyll, Bootstrap, and Jenkins for a visually stunning and advanced platform. NPT offers a diverse range of pool materials, from tiles to fire features, making the dream backyard a reality through innovative technology.
               </p>
 
-              <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.swimmingpool.com" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
+              <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.nptpool.com/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
 
               <Link target="_blank" href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-white px-6 py-4 font-semibold leading-5 text-indigo-600  mr-4 mb-4 border-2 border-indigo-600 hover:bg-indigo-400 duration-300 hover:border-indigo-400 hover:text-white">Contact me</Link>
 
