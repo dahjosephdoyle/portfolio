@@ -13,7 +13,7 @@ export default function Portfolio() {
 
         {
             name: "Swimmingpool.com",
-            href: "#",
+            href: "/swimmingpool",
             imageSrc: "/projects/swimmingpool-thumbnail.webp",
             imageAlt: "",
             description: "The rest of the house will still be a mess, but your desk will look great.",
@@ -21,28 +21,28 @@ export default function Portfolio() {
 
         {
             name: "HotTubs.com",
-            href: "#",
+            href: "/hottubs",
             imageSrc: "/projects/hottubs-thumbnail.webp",
             imageAlt: "",
             description: "Be more productive than enterprise project managers with a single piece of paper.",
         },
         {
             name: "NPTpool.com",
-            href: "#",
+            href: "/nptpool",
             imageSrc: "/projects/npt-thumbnail.webp",
             imageAlt: "",
             description: "Be more productive than enterprise project managers with a single piece of paper.",
         },
         {
             name: "Pool360 Portal",
-            href: "#",
+            href: "/pool360",
             imageSrc: "/projects/pool360-thumbnail.webp",
             imageAlt: "",
             description: "Be more productive than enterprise project managers with a single piece of paper.",
         },
         {
             name: "RegalChemicals.com",
-            href: "#",
+            href: "/regal-chemicals",
             imageSrc: "/projects/regal-thumbnail.webp",
             imageAlt: "",
             description: "Be more productive than enterprise project managers with a single piece of paper.",
