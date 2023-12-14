@@ -9,7 +9,7 @@ export default function Home() {
 
   const heroContent = {
     linkdIn: true,
-    headingIcon: "fa-regular fa-hand-love",
+    headingIcon: "fa-regular fa-hand-horns",
     heading: "Hey, I'm Joe",
     ellipsis: true,
     description: "a not so average web developer and designer with proficiency in web languages and frameworks. I'm committed to practical solutions that meet industry standards and value collaboration. Please, explore my portfolio below for project insights.",
@@ -21,16 +21,16 @@ export default function Home() {
   let bannerContent = {
     preheading: "Work Showcase",
     heading: "Portfolio",
-    description: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    description: "Introducing a diverse portfolio of websites, showcasing a spectrum of innovative digital experiences crafted to meet diverse needs and preferences.",
   };
 
   const projects = [
     {
         name: "ProflexLiner.com",
-        href: "/proflex",
+        href: "/proflexliner",
         imageSrc: "/projects/proflexliner-thumbnail.webp",
         imageAlt: "Proflexliner.com project",
-        description: "Keep your phone, keys, and wallet together, so you can lose everything at once.",
+        description: "A single-page, multilingual website created using Next.js and Tailwind CSS",
     },
 
     {
@@ -38,7 +38,7 @@ export default function Home() {
         href: "/swimmingpool",
         imageSrc: "/projects/swimmingpool-thumbnail.webp",
         imageAlt: "Swimmingpool.com project",
-        description: "The rest of the house will still be a mess, but your desk will look great.",
+        description: "The Ultimate Pool Resource created with Jekyll SSG and Bootstrap",
     },
 
     {
@@ -46,28 +46,28 @@ export default function Home() {
         href: "/hottubs",
         imageSrc: "/projects/hottubs-thumbnail.webp",
         imageAlt: "HotTubs.com project",
-        description: "Be more productive than enterprise project managers with a single piece of paper.",
+        description: "An in-progress site taking full advantage of Next.js's components structure.",
     },
     {
         name: "NPTpool.com",
         href: "/nptpool",
         imageSrc: "/projects/npt-thumbnail.webp",
         imageAlt: "NPTpool.com project",
-        description: "Be more productive than enterprise project managers with a single piece of paper.",
+        description: "A luxury products focused website built with Jekyll SSG and Bootstrap",
     },
     {
-        name: "Pool360 Portal",
+        name: "POOL360 Portal",
         href: "/pool360",
-        imageSrc: "/projects/pool360-thumbnail.webp",
+        imageSrc: "/projects/POOL360-thumbnail.webp",
         imageAlt: "POOL360 Portal project",
-        description: "Be more productive than enterprise project managers with a single piece of paper.",
+        description: "Customer portal project built using Next.js, Contentful CMS, and Tailwind CSS",
     },
     {
         name: "RegalChemicals.com",
         href: "/regalchemicals",
         imageSrc: "/projects/regal-thumbnail.webp",
         imageAlt: "RegalChemicals.com project",
-        description: "Be more productive than enterprise project managers with a single piece of paper.",
+        description: "A simple and straightforward informational website created with Next.js and Tailwind CSS",
     },
 ];
 

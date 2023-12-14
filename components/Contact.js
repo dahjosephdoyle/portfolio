@@ -84,9 +84,9 @@ export default function Contact({name, phone, email, message}) {
           <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
         </svg>
         <div className="mx-auto max-w-xl lg:max-w-4xl">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your project</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let’s talk!</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            We help companies and individuals build out their brand guidelines.
+            Feel free to reach out to discuss bringing your website vision to life—I'm here to collaborate and turn ideas into a captivating online presence!
           </p>
           <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
             
@@ -94,15 +94,15 @@ export default function Contact({name, phone, email, message}) {
             
             
             <form className="lg:flex-auto" onSubmit={formik.handleSubmit}>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div className="grid gap-x-8 md:gap-y-6 gap-y-2 sm:grid-cols-2">
                 {/* Name Label and Input */}
                 {name &&
-                  <div>
+                  <div className="col-span-1">
                       <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
                         Name
                       </label>
                     
-                      <div className="mt-2.5">
+                      <div className="mt-2.5 w-full">
                         <input
                           type="text"
                           name="name"
@@ -121,11 +121,11 @@ export default function Contact({name, phone, email, message}) {
                 }
                 {/* Phone Number Lable and Input */}
                 {phone &&
-                  <div>
+                  <div className="col-span-1">
                     <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
                       Phone Number
                     </label>
-                    <div className="mt-2.5">
+                    <div className="mt-2.5 w-full">
                       <input
                         type="tel"
                         onChange={formik.handleChange}
@@ -161,7 +161,7 @@ export default function Contact({name, phone, email, message}) {
                 }
                 {/* Message Lable and Input */}
                 {message &&
-                  <div className="sm:col-span-2">
+                  <div className="col-span-2">
                     <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                       Message
                     </label>

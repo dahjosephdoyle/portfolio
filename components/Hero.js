@@ -22,7 +22,7 @@ export default function Hero({linkdIn, headingIcon, heading, ellipsis, descripti
               <h1 className="lg:mt-24 mt-12 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
                 {/* Heading Icon */}
                 {headingIcon &&
-                  <i className="fa-regular fa-hand-love text-6xl text-indigo-500 mr-6"></i>
+                  <i className={`${headingIcon} text-6xl text-indigo-500 mr-6`}></i>
                 }
                {heading}
                {/* Ellipses */}

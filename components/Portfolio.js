@@ -6,9 +6,9 @@ export default function Portfolio({projects}) {
         <section
             id="portfolio"
             aria-labelledby="project-heading"
-            className="mx-auto max-w-xl px-4 pt-12 pb-24 sm:px-6 lg:max-w-7xl lg:px-8"
+            className="mx-auto max-w-4xl px-4 pt-12 pb-24 sm:px-6 lg:max-w-7xl lg:px-8"
         >
-            <div className="mt-10 lg:space-y-12 grid lg:grid-cols-3 grid-cols-2 gap-x-8 space-y-0">
+            <div className="mt-10 grid lg:grid-cols-3 grid-cols-2 gap-x-8 space-y-0">
             {projects.map((project, key) => (
                 <a key={project.name} href={project.href} className="group pb-8 lg:text-left text-center flex flex-col lg:items-start items-center col-span-1">
                 <div

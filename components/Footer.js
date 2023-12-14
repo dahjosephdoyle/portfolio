@@ -1,9 +1,13 @@
 const navigation = {
     portfolio: [
-      { name: 'Marketing', href: '#' },
-      { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      { name: 'ProflexLiner.com', href: '/proflexliner' },
+      { name: 'Swimmingpool.com', href: '/swimmingpool' },
+      { name: 'HotTubs.com', href: '/hottubs' },
+    ],
+    columnTwo: [
+        { name: 'NPTpool.com', href: '/nptpool' },
+        { name: 'POOL360 Portal', href: '/pool360' },
+        { name: 'RegalChemicals.com', href: '/regalchemicals' },
     ],
     social: [
       {
@@ -39,7 +43,7 @@ const navigation = {
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
-            <i className="fa-regular fa-hand-love text-4xl text-indigo-500 mr-6"></i>
+            <i class="fa-regular fa-hand-horns text-4xl text-indigo-500 mr-6"></i>
               <p className="text-sm leading-6 text-gray-300">
                 Making the world a better place through constructing elegant hierarchies.
               </p>
@@ -67,10 +71,22 @@ const navigation = {
                   </ul>
                 </div>
               </div>
+              <div className="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <ul role="list" className="mt-12 space-y-4">
+                    {navigation.columnTwo.map((item) => (
+                      <li key={item.name}>
+                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-            <p className="text-xs leading-5 text-gray-400">Website created in 2023 with sweat and elbow grease.</p>
           </div>
         </div>
       </footer>
