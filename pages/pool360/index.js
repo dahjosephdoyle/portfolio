@@ -49,17 +49,17 @@ export default function Swimmingpool() {
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Development Workflow:</h2>
                 <p>
-                The development process is seamlessly integrated into Azure's Deployment Pipeline, emphasizing an efficient workflow. This ensures that the portal remains up-to-date and reliable for customers managing their marketing endeavors.
+                The development process is seamlessly integrated into Azure&apos;s Deployment Pipeline, emphasizing an efficient workflow. This ensures that the portal remains up-to-date and reliable for customers managing their marketing endeavors.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Customer-Centric Features:</h2>
                 <p>
-                POOL360 Portal focuses on empowering customers with the tools they need. Whether it's managing marketing ad campaigns, enrolling for listings on diverse customer locators, or updating location information, the portal is designed for practicality and user-friendly interactions.
+                POOL360 Portal focuses on empowering customers with the tools they need. Whether it&apos;s managing marketing ad campaigns, enrolling for listings on diverse customer locators, or updating location information, the portal is designed for practicality and user-friendly interactions.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion</h2>
                 <p>
-                The POOL360 Portal is an ongoing project dedicated to enhancing the customer experience. If you're seeking a platform that puts you in control of your marketing strategies, I'm here to discuss how we can continue to refine and elevate your online presence.
+                The POOL360 Portal is an ongoing project dedicated to enhancing the customer experience. If you&apos;re seeking a platform that puts you in control of your marketing strategies, I&apos;m here to discuss how we can continue to refine and elevate your online presence.
                 </p>
 
                 <BackToPortfolioButton />

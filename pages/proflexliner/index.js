@@ -50,21 +50,21 @@ export default function ProflexLiner() {
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Next.js: Elevating User Experience:</h2>
                 <p className="mt-8">
-                We strategically chose Next.js for Proflex Liner, leveraging its powerful client-side rendering capabilities. This decision optimizes the website's performance, ensuring efficient rendering on the client side for seamless navigation and an enhanced user experience, aligning perfectly with Proflex Liner's commitment to advanced technology and user-friendly design.
+                We strategically chose Next.js for Proflex Liner, leveraging its powerful client-side rendering capabilities. This decision optimizes the website&apos;s performance, ensuring efficient rendering on the client side for seamless navigation and an enhanced user experience, aligning perfectly with Proflex Liner&apos;s commitment to advanced technology and user-friendly design.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">No server? Tailwind CSS: Stylish Simplicity:</h2>
                 <p className="mt-6">
-                  Tailwind CSS played an instrumental role in shaping the aesthetic appeal of Proflex Liner. This utility-first CSS framework enabled the creation of a visually stunning and consistent design across the entire website. Its modular approach to styling provided the flexibility needed to maintain a cohesive look, ensuring a visually captivating interface aligned with Proflex Liner's commitment to luxury.
+                  Tailwind CSS played an instrumental role in shaping the aesthetic appeal of Proflex Liner. This utility-first CSS framework enabled the creation of a visually stunning and consistent design across the entire website. Its modular approach to styling provided the flexibility needed to maintain a cohesive look, ensuring a visually captivating interface aligned with Proflex Liner&apos;s commitment to luxury.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Multilingual Magic:</h2>
                 <p className="mt-6">
-                ProflexLiner's European presence necessitated meticulous multilingual integration. Effortlessly transitioning between eight languages, the website offers a tailored experience for a diverse European audience. Each language adaptation is carefully curated, maintaining a unified design that reflects the brand's commitment to European excellence.
+                ProflexLiner&apos;s European presence necessitated meticulous multilingual integration. Effortlessly transitioning between eight languages, the website offers a tailored experience for a diverse European audience. Each language adaptation is carefully curated, maintaining a unified design that reflects the brand&apos;s commitment to European excellence.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Lead Generation and User Engagement:</h2>
                 <p className="mt-6">
-                Beyond its informative role, ProflexLiner strategically integrates a lead generation form at the bottom of the page. This ensures that visitors, captivated by the brand's story, can seamlessly express their interest and become part of the ProflexLiner community. The website's one-page design enhances user engagement, making the lead generation process intuitive and accessible.
+                Beyond its informative role, ProflexLiner strategically integrates a lead generation form at the bottom of the page. This ensures that visitors, captivated by the brand&apos;s story, can seamlessly express their interest and become part of the ProflexLiner community. The website&apos;s one-page design enhances user engagement, making the lead generation process intuitive and accessible.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion</h2>

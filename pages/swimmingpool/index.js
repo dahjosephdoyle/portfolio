@@ -48,21 +48,21 @@ export default function Swimmingpool() {
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Lead Generation Platform: An API-Powered Connection:</h2>
                 <p className="mt-8">
-                At the heart of Swimmingpool.com's innovation is the lead generation platform, strategically designed to bridge the gap between users and industry professionals. This platform goes beyond conventional lead generation by employing an API to fetch data directly from a SQL database. This API-driven approach ensures real-time, accurate information, enhancing the user experience and facilitating seamless connections between those seeking pool-related services and industry experts.
+                At the heart of Swimmingpool.com&apos;s innovation is the lead generation platform, strategically designed to bridge the gap between users and industry professionals. This platform goes beyond conventional lead generation by employing an API to fetch data directly from a SQL database. This API-driven approach ensures real-time, accurate information, enhancing the user experience and facilitating seamless connections between those seeking pool-related services and industry experts.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Jenkins Pipeline: Automating Deployment Excellence:</h2>
                 <p className="mt-6">
-                Behind the scenes, Swimmingpool.com relies on a robust deployment process managed by the Jenkins pipeline. This CI/CD approach streamlines the release of updates and improvements, maintaining the site's reliability and performance. The Jenkins pipeline acts as the automated backbone, ensuring that changes in the codebase are efficiently integrated and deployed, showcasing the commitment to developer efficiency and project agility.
+                Behind the scenes, Swimmingpool.com relies on a robust deployment process managed by the Jenkins pipeline. This CI/CD approach streamlines the release of updates and improvements, maintaining the site&apos;s reliability and performance. The Jenkins pipeline acts as the automated backbone, ensuring that changes in the codebase are efficiently integrated and deployed, showcasing the commitment to developer efficiency and project agility.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Casual Blogging and Maintenance Wisdom:</h2>
                 <p className="mt-6">
-                The site's blog section, while casual in tone, represents a technical achievement in content management. Leveraging Jekyll's templating capabilities, the blog seamlessly integrates lifestyle articles, maintenance advice, and design/product suggestions. The structured content organization allows for easy updates and additions, contributing to a dynamic user experience.
+                The site&apos;s blog section, while casual in tone, represents a technical achievement in content management. Leveraging Jekyll&apos;s templating capabilities, the blog seamlessly integrates lifestyle articles, maintenance advice, and design/product suggestions. The structured content organization allows for easy updates and additions, contributing to a dynamic user experience.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Pool-Building Guide: Technical Insights from Conception to Completion:</h2>
                 <p className="mt-6">
-                Swimmingpool.com doesn't just provide information—it serves as a comprehensive technical guide for pool construction. The site breaks down the intricate steps involved, from material selection to navigating local regulations. The technical documentation on the construction process aligns with the developer's commitment to clarity and completeness in information dissemination.
+                Swimmingpool.com doesn&apos;t just provide information—it serves as a comprehensive technical guide for pool construction. The site breaks down the intricate steps involved, from material selection to navigating local regulations. The technical documentation on the construction process aligns with the developer&apos;s commitment to clarity and completeness in information dissemination.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion</h2>

@@ -99,7 +99,7 @@ export default function HotTubs() {
             <div className="bg-indigo-900 rounded-lg p-8 mt-8">
               <h2 className="text-2xl font-bold tracking-tight text-white">Work in Progress:</h2>
               <p className="mt-6 text-white">
-                It's worth noting that Hottubs.com is a project still in development and has not been released live. The ongoing work aims to refine and enhance the user experience continually.
+                It&apos;s worth noting that Hottubs.com is a project still in development and has not been released live. The ongoing work aims to refine and enhance the user experience continually.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export default function HotTubs() {
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Development Workflow:</h2>
               <p className="mt-6">
-              The development process is seamlessly integrated into Azure's Deployment Pipeline, emphasizing a practical and efficient workflow. Continuous integration and deployment principles are applied to maintain an updated and reliable website.
+              The development process is seamlessly integrated into Azure&apos;s Deployment Pipeline, emphasizing a practical and efficient workflow. Continuous integration and deployment principles are applied to maintain an updated and reliable website.
               </p>
 
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">
@@ -131,7 +131,7 @@ export default function HotTubs() {
 
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion</h2>
 
-              <p className="mt-6">Hottubs.com is a project focused on simplicity and functionality, currently in the works. If you're looking for a web developer who prioritizes practical solutions, I'm here to discuss how we can enhance your online presence.
+              <p className="mt-6">Hottubs.com is a project focused on simplicity and functionality, currently in the works. If you&apos;re looking for a web developer who prioritizes practical solutions, I&apos;m here to discuss how we can enhance your online presence.
               </p>
 
               <BackToPortfolioButton />
