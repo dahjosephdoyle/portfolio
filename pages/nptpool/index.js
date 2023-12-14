@@ -34,7 +34,7 @@ export default function Swimmingpool() {
               </Link>
 
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              Discover NPTpool.com, POOLCORP's exclusive 2020 creation, blending Jekyll, Bootstrap, and Jenkins for a visually stunning and advanced platform. NPT offers a diverse range of pool materials, from tiles to fire features, making the dream backyard a reality through innovative technology.
+              Discover NPTpool.com, POOLCORP&apos;s exclusive 2020 creation, blending Jekyll, Bootstrap, and Jenkins for a visually stunning and advanced platform. NPT offers a diverse range of pool materials, from tiles to fire features, making the dream backyard a reality through innovative technology.
               </p>
 
               <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.nptpool.com/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
@@ -44,15 +44,15 @@ export default function Swimmingpool() {
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Jekyll and Bootstrap: A Synergetic Pair in Transforming Backyard Experiences</h2>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
                 <p>
-                  NPTpool.com leverages the powerful combination of Jekyll and Bootstrap, forming the core of its development stack. Jekyll, as a static site generator, ensures the site's efficiency, security, and easy maintenance. Bootstrap, a front-end framework, contributes responsive design elements, a grid system, and utilities, creating an immersive user experience that seamlessly adapts to various devices.
+                  NPTpool.com leverages the powerful combination of Jekyll and Bootstrap, forming the core of its development stack. Jekyll, as a static site generator, ensures the site&apos;s efficiency, security, and easy maintenance. Bootstrap, a front-end framework, contributes responsive design elements, a grid system, and utilities, creating an immersive user experience that seamlessly adapts to various devices.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Lead Generation and Showroom Locator:</h2>
                 <p className="mt-8">
-                NPTpool.com's design centers around the user, incorporating a lead generation platform with a distinctive approach. The website includes a showroom finder, directing users to NPT showrooms where they can leisurely explore products in a stress-free setting. The focus here is on providing an experiential journey rather than merely facilitating transactions, creating a cozy space for users to imagine their ideal outdoor space. The utilization of Bootstrap guarantees an aesthetically pleasing and easily navigable showroom locator.
+                NPTpool.com&apos;s design centers around the user, incorporating a lead generation platform with a distinctive approach. The website includes a showroom finder, directing users to NPT showrooms where they can leisurely explore products in a stress-free setting. The focus here is on providing an experiential journey rather than merely facilitating transactions, creating a cozy space for users to imagine their ideal outdoor space. The utilization of Bootstrap guarantees an aesthetically pleasing and easily navigable showroom locator.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Contractor Locator: Harnessing the Power of Solr and Javascript:</h2>
                 <p className="mt-6">
-                Beyond showrooms, NPTpool.com offers a sophisticated contractor locator, powered by Javascript and a Lucene index called Solr. This dynamic locator pulls real-time information, allowing users to find certified NPT contractors seamlessly. The use of Solr enhances the search functionality, delivering accurate and instant results, reinforcing NPT's commitment to excellence in user experience.
+                Beyond showrooms, NPTpool.com offers a sophisticated contractor locator, powered by Javascript and a Lucene index called Solr. This dynamic locator pulls real-time information, allowing users to find certified NPT contractors seamlessly. The use of Solr enhances the search functionality, delivering accurate and instant results, reinforcing NPT&apos;s commitment to excellence in user experience.
                 </p>
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion:</h2>

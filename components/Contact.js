@@ -86,7 +86,7 @@ export default function Contact({name, phone, email, message}) {
         <div className="mx-auto max-w-xl lg:max-w-4xl">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let’s talk!</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Feel free to reach out to discuss bringing your website vision to life—I'm here to collaborate and turn ideas into a captivating online presence!
+            Feel free to reach out to discuss bringing your website vision to life—I&apos;m here to collaborate and turn ideas into a captivating online presence!
           </p>
           <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
             

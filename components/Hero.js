@@ -35,7 +35,7 @@ export default function Hero({linkdIn, headingIcon, heading, ellipsis, descripti
               </p>
               <div className="mt-16 flex items-center justify-space-around flex-wrap">
                 {skills.map((skill, key) => (
-                  <span className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4">{skill}</span>
+                  <span key={skill} className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4">{skill}</span>
                 ))}
                 <span className="text-indigo-500 font-semibold px-6 py-4 leading-5  inline-block border-2 border-indigo-700 rounded-md mb-4">and more!</span>
               </div>
