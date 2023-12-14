@@ -96,7 +96,7 @@ export default function HotTubs() {
 
             <ContactMeButton />
 
-            <div className="bg-indigo-500 rounded-lg p-8 mt-8">
+            <div className="bg-indigo-900 rounded-lg p-8 mt-8">
               <h2 className="text-2xl font-bold tracking-tight text-white">Work in Progress:</h2>
               <p className="mt-6 text-white">
                 It's worth noting that Hottubs.com is a project still in development and has not been released live. The ongoing work aims to refine and enhance the user experience continually.

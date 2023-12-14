@@ -12,21 +12,21 @@ const navigation = {
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/TheJosephDoyle',
         icon: (props) => (
             <i class="fa-brands fa-facebook"></i>
         ),
       },
       {
         name: 'linkedIn',
-        href: '#',
+        href: 'https://www.linkedin.com/in/joseph-doyle-09463b75/',
         icon: (props) => (
           <i class="fa-brands fa-linkedin"></i>
         ),
       },
       {
         name: 'GitHub',
-        href: '#',
+        href: 'https://github.com/dahjosephdoyle/portfolio',
         icon: (props) => (
             <i class="fa-brands fa-github"></i>
         ),
@@ -45,11 +45,11 @@ const navigation = {
             <div className="space-y-8">
             <i class="fa-regular fa-hand-horns text-4xl text-indigo-500 mr-6"></i>
               <p className="text-sm leading-6 text-gray-300">
-                Making the world a better place through constructing elegant hierarchies.
+                Revitalizing the online realm through the mindful development of individual websites.
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400 text-2xl">
+                  <a key={item.name} href={item.href} aria-label="This link opens in a new tab" target="_blank" className="text-gray-500 hover:text-gray-400 text-2xl">
                     <span className="sr-only">{item.name}</span>
                     <item.icon aria-hidden="true" />
                   </a>
