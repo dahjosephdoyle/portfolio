@@ -2,7 +2,7 @@
 import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 export default function Swimmingpool() {
@@ -62,7 +62,7 @@ export default function Swimmingpool() {
                 Regal Chemicals' website stands as a digital gateway to quality and innovation in pool chemicals. If you're looking for a website that mirrors your brand's values and simplifies user interaction, I'm here to discuss how we can further elevate your online presence.
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>

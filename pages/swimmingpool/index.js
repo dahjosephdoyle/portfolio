@@ -1,7 +1,7 @@
 
 import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
@@ -70,7 +70,7 @@ export default function Swimmingpool() {
                 <p className="mt-6">Swimmingpool.com, developed in 2020, demonstrates my technical skills and innovation through seamless integration of Jekyll, Bootstrap, and Jenkins. The API-driven lead generation system showcases cutting-edge solutions for real-time, accurate information. In my portfolio, Swimmingpool.com reflects my commitment to pushing the boundaries of web development and creating engaging digital experiences.
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>

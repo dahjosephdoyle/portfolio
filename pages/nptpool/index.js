@@ -2,7 +2,7 @@
 import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 export default function Swimmingpool() {
@@ -60,7 +60,7 @@ export default function Swimmingpool() {
                 NPTpool.com stands as a testament to the synergy of technology and design, shaping the future of backyard innovation. With Jekyll, Bootstrap, and Jenkins orchestrating its development, this site not only presents a comprehensive private label product line but also introduces innovative locators that enhance user experience. The unique showroom and contractor locators, coupled with the power of Solr and Javascript, showcase a commitment to providing users with not just products, but an entire backyard lifestyle. In my portfolio, NPTpool.com remains a proud exemplar of my dedication to crafting digital experiences that transcend expectations and redefine the landscape of web development.
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>

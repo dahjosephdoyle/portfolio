@@ -1,7 +1,7 @@
 
 import NextImage from '@/components/NextImage';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 import NextBreadcrumb from '@/components/NextBreadcrumb'
@@ -73,7 +73,7 @@ export default function ProflexLiner() {
 
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>

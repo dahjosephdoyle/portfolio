@@ -2,7 +2,7 @@
 import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 export default function Swimmingpool() {
@@ -62,7 +62,7 @@ export default function Swimmingpool() {
                 The POOL360 Portal is an ongoing project dedicated to enhancing the customer experience. If you're seeking a platform that puts you in control of your marketing strategies, I'm here to discuss how we can continue to refine and elevate your online presence.
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>

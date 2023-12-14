@@ -3,9 +3,64 @@ import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '../../components/ContactMeButton';
-export default function Example() {
+import Banner from '@/components/Banner'
+import Portfolio from '@/components/Portfolio'
+
+export default function HotTubs() {
+  let bannerContent = {
+    preheading: "Work Showcase",
+    heading: "Portfolio",
+    description: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+  };
+
+  const projects = [
+    {
+        name: "ProflexLiner.com",
+        href: "/proflex",
+        imageSrc: "/projects/proflexliner-thumbnail.webp",
+        imageAlt: "Proflexliner.com project",
+        description: "Keep your phone, keys, and wallet together, so you can lose everything at once.",
+    },
+
+    {
+        name: "Swimmingpool.com",
+        href: "/swimmingpool",
+        imageSrc: "/projects/swimmingpool-thumbnail.webp",
+        imageAlt: "",
+        description: "The rest of the house will still be a mess, but your desk will look great.",
+    },
+
+    {
+        name: "HotTubs.com",
+        href: "/hottubs",
+        imageSrc: "/projects/hottubs-thumbnail.webp",
+        imageAlt: "",
+        description: "Be more productive than enterprise project managers with a single piece of paper.",
+    },
+    {
+        name: "NPTpool.com",
+        href: "/nptpool",
+        imageSrc: "/projects/npt-thumbnail.webp",
+        imageAlt: "",
+        description: "Be more productive than enterprise project managers with a single piece of paper.",
+    },
+    {
+        name: "Pool360 Portal",
+        href: "/pool360",
+        imageSrc: "/projects/pool360-thumbnail.webp",
+        imageAlt: "",
+        description: "Be more productive than enterprise project managers with a single piece of paper.",
+    },
+    {
+        name: "RegalChemicals.com",
+        href: "/regalchemicals",
+        imageSrc: "/projects/regal-thumbnail.webp",
+        imageAlt: "",
+        description: "Be more productive than enterprise project managers with a single piece of paper.",
+    },
+];
   return (
     <>
     <NextBreadcrumb
@@ -19,7 +74,7 @@ export default function Example() {
         <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
           <div className="relative lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
             <NextImage
-              className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
+              className="relative inset-0 h-full w-full bg-gray-50 object-cover"
               src="hottubs-screenshot.png"
               alt=""
               width={1080}
@@ -77,10 +132,9 @@ export default function Example() {
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Conclusion</h2>
 
               <p className="mt-6">Hottubs.com is a project focused on simplicity and functionality, currently in the works. If you're looking for a web developer who prioritizes practical solutions, I'm here to discuss how we can enhance your online presence.
+              </p>
 
-</p>
-
-              <BackHomeButton />
+              <BackToPortfolioButton />
             </div>
           </div>
         </div>
