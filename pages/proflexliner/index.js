@@ -1,7 +1,8 @@
 
 import NextImage from '@/components/NextImage';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
-import BackHomeButton from '../../components/BackHomeButton';
+import BackToPortfolioButton from '../../components/BackToPortfolioButton';
+import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 
@@ -16,9 +17,9 @@ export default function ProflexLiner() {
 
 
       <div className="relative bg-white">
-        <div className="mx-auto max-w-7xl flex lg:flex-row flex-col-reverse lg:justify-between lg:px-8 xl:justify-end">
-          <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-            <div className="relative lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+          <div className="col-span-1 bg-slate-100 lg:order-1 order-2">
+            <div className="relative lg:h-auto lg:w-full">
               <NextImage
                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
                 src="proflex-screenshot.png"
@@ -28,8 +29,8 @@ export default function ProflexLiner() {
               />
             </div>
           </div>
-          <div className="px-6 lg:contents">
-            <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
+          <div className="px-6 col-span-1 lg:order-2 order-1">
+            <div className="max-w-2xl px-12 py-24 lg:mx-0 mx-auto">
             <Link target="_blank" aria-label="Link Opens in a New Tab" href="https://proflexliner.com/" className="group">
               <h1 className="pb-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl border-b-4 border-b-white group-hover:border-b-4 group-hover:border-indigo-400 inline-block duration-300 group-hover:text-indigo-600">Proflexliner.com</h1>
             </Link>
@@ -40,7 +41,7 @@ export default function ProflexLiner() {
 
               <Link target="_blank" aria-label="Link Opens in a New Tab" href="https://proflexliner.com/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
 
-              <Link target="_blank" href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-white px-6 py-4 font-semibold leading-5 text-indigo-600  mr-4 mb-4 border-2 border-indigo-600 hover:bg-indigo-400 duration-300 hover:border-indigo-400 hover:text-white">Contact me</Link>
+              <ContactMeButton />
 
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">The Challenge:</h2>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
@@ -72,7 +73,7 @@ export default function ProflexLiner() {
 
                 </p>
 
-                <BackHomeButton />
+                <BackToPortfolioButton />
               </div>
             </div>
           </div>
