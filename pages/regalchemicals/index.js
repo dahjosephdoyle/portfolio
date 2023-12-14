@@ -3,6 +3,7 @@ import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
 import BackHomeButton from '../../components/BackHomeButton';
+import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
 export default function Swimmingpool() {
   return (
@@ -38,7 +39,7 @@ export default function Swimmingpool() {
 
               <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.regalchemicals.com/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
 
-              <Link target="_blank" href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-white px-6 py-4 font-semibold leading-5 text-indigo-600  mr-4 mb-4 border-2 border-indigo-600 hover:bg-indigo-400 duration-300 hover:border-indigo-400 hover:text-white">Contact me</Link>
+              <ContactMeButton />
 
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-indigo-400">Technological Foundation:</h2>

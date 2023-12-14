@@ -4,6 +4,7 @@ import NextBreadcrumb from '@/components/NextBreadcrumb'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import BackHomeButton from '../../components/BackHomeButton';
+import ContactMeButton from '../../components/ContactMeButton';
 export default function Example() {
   return (
     <>
@@ -38,7 +39,7 @@ export default function Example() {
 
             <Link aria-label="Link Opens in a New Tab" target="_blank" href="https://www.hottubs.com/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 duration-300">View the live site</Link>
 
-            <Link target="_blank" href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-white px-6 py-4 font-semibold leading-5 text-indigo-600  mr-4 mb-4 border-2 border-indigo-600 hover:bg-indigo-500 duration-300 hover:border-indigo-400 hover:text-white">Contact me</Link>
+            <ContactMeButton />
 
             <div className="bg-indigo-500 rounded-lg p-8 mt-8">
               <h2 className="text-2xl font-bold tracking-tight text-white">Work in Progress:</h2>
