@@ -1,6 +1,7 @@
 
 import NextImage from '@/components/NextImage';
 import NextBreadcrumb from '@/components/NextBreadcrumb'
+import BackHomeButton from '../../components/BackHomeButton';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 export default function Swimmingpool() {
@@ -13,9 +14,9 @@ export default function Swimmingpool() {
         />
 
       <div className="relative bg-white">
-        <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
+        <div className="mx-auto max-w-7xl flex lg:flex-row flex-col-reverse lg:justify-between lg:px-8 xl:justify-end">
           <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-            <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+            <div className="relative lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
               <NextImage
                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
                 src="swimmingpool-screenshot.png"
@@ -68,7 +69,7 @@ export default function Swimmingpool() {
                 <p className="mt-6">Swimmingpool.com, developed in 2020, demonstrates my technical skills and innovation through seamless integration of Jekyll, Bootstrap, and Jenkins. The API-driven lead generation system showcases cutting-edge solutions for real-time, accurate information. In my portfolio, Swimmingpool.com reflects my commitment to pushing the boundaries of web development and creating engaging digital experiences.
                 </p>
 
-                <Link href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4">Back to Home</Link>
+                <BackHomeButton />
               </div>
             </div>
           </div>

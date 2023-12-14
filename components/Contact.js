@@ -3,47 +3,62 @@ import emailjs from "@emailjs/browser";
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 
-export default function Contact() {
-useEffect(() => emailjs.init("LGzTC7ihOs2j3UsvA"), []);
-const serviceId = "service_h26feta";
-const templateId = "template_d25yk6b";
-const publicKey = "LGzTC7ihOs2j3UsvA";
-const [buttonState, setButtonState] = useState('Send Message');
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-const formik = useFormik({
-  //we have created our initailValues object in a format EmailJS accepts
-  initialValues: {
-    name: '', //user name
-    phone: '', //user phone number
-    email: '', //user email
-    message: '' // message of email
-  },
-  validationSchema: Yup.object({
-    name: Yup.string()
-      .required('* Name field is required'),
-    phone: Yup.string().matches(phoneRegExp, 'Phone number is not valid'),
-    email: Yup.string().email('Invalid email address')
-      .required('* Email field is required'),
-    message: Yup.string().required('* Message field is required')
-  }),
-  onSubmit: (values, {setSubmitting, resetForm}) => {
-     try{
-      emailjs.send(serviceId , templateId, values, publicKey)
-        .then(() => {
-           setButtonState('Send Email');
-           setSubmitting(false);
-           resetForm();
-              });
-       }
-       catch (error) {
-        console.log(error);
-          setButtonState('Send Email');
-          setSubmitting(false);
-      }
- },
-});
+export default function Contact({name, phone, email, message}) {
+
+  useEffect(() => emailjs.init("LGzTC7ihOs2j3UsvA"), []);
+
+    const serviceId = `${process.env.NEXT_PUBLIC_SERVICE_ID}`;
+    const templateId = `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`;
+    const publicKey = `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`;
+
+    const [buttonState, setButtonState] = useState('Send Message');
+    const [formSubmit, setFormSubmit] = useState(false);
+    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+    const formik = useFormik({
+      //we have created our initailValues object in a format EmailJS accepts
+      initialValues: {
+        name: '', //user name
+        phone: '', //user phone number
+        email: '', //user email
+        message: '' // message of email
+      },
+      
+      validationSchema: Yup.object({
+        name: Yup.string().required('* Name field is required'),
+        phone: Yup.string().matches(phoneRegExp, 'Phone number is not valid').required('* Phone Number field is required'),
+        email: Yup.string().email('Invalid email address').required('* Email field is required'),
+        message: Yup.string().required('* Message field is required')
+      }),
+
+      onSubmit: (values, {setSubmitting, resetForm}) => {
+        try{
+          emailjs.send(serviceId , templateId, values, publicKey)
+            .then(() => {
+              setFormSubmit(true);
+              setButtonState('Message Sent');
+              setSubmitting(false);
+              resetForm();
+                  });
+          }
+          catch (error) {
+            console.log(error);
+              setButtonState('Send Message');
+              setFormSubmit(false)
+              setSubmitting(false);
+          }
+      },
+  });
+
+  if(formSubmit === true) {
+    setTimeout(() => {
+      setFormSubmit(false);
+      setButtonState('Send Another Message');
+    }, 5000);
+  }
+
     return (
-      <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div id="contactForm" className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
           aria-hidden="true"
@@ -80,85 +95,99 @@ const formik = useFormik({
             
             <form className="lg:flex-auto" onSubmit={formik.handleSubmit}>
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Name
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      onChange={formik.handleChange}
-         	            value={formik.values.name}
-                      autoComplete="given-name"
-                      placeholder="Your Full Name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                    <div className={`expandable ${formik.touched.name && formik.errors.name ? 'show' : ''}`}>
-                    {formik.errors.name}
-                </div>
+                {/* Name Label and Input */}
+                {name &&
+                  <div>
+                      <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                        Name
+                      </label>
+                    
+                      <div className="mt-2.5">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          onChange={formik.handleChange}
+                          value={formik.values.name}
+                          autoComplete="given-name"
+                          placeholder="Your Full Name"
+                          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                        <div className={`expandable ${formik.touched.name && formik.errors.name ? 'show' : ''}`}>
+                          <span className="text-indigo-600 mt-2 inline-block">{formik.errors.name}</span>
+                        </div>
+                      </div>
                   </div>
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Phone Number
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="tel"
-                      onChange={formik.handleChange}
-		                  value={formik.values.phone}
-                      placeholder="Your Phone Number"
-                      name="phone"
-                      id="phone"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                    {formik.errors.phone}
-       
+                }
+                {/* Phone Number Lable and Input */}
+                {phone &&
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Phone Number
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        type="tel"
+                        onChange={formik.handleChange}
+                        value={formik.values.phone}
+                        placeholder="Your Phone Number"
+                        name="phone"
+                        id="phone"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                      <span className="text-indigo-600 mt-2 inline-block">{formik.errors.phone}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="col-span-2">
-                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Email Address
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="email"
-                      onChange={formik.handleChange}
-		                  value={formik.values.email}
-                      placeholder="Your Email Address"
-                      name="email"
-                      id="email"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                    {formik.errors.email}
+                  }
+                {/* Email Addrress Lable and Input */}
+                {email &&
+                  <div className="col-span-2">
+                    <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Email Address
+                    </label>
+                    <div className="mt-2.5">
+                      <input
+                        type="email"
+                        onChange={formik.handleChange}
+                        value={formik.values.email}
+                        placeholder="Your Email Address"
+                        name="email"
+                        id="email"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                      <span className="text-indigo-600 mt-2 inline-block">{formik.errors.email}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Message
-                  </label>
-                  <div className="mt-2.5">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      placeholder="Your Message"
-                      onChange={formik.handleChange}
-		                  value={formik.values.message}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                    {formik.errors.message}
+                }
+                {/* Message Lable and Input */}
+                {message &&
+                  <div className="sm:col-span-2">
+                    <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                      Message
+                    </label>
+                    <div className="mt-2.5">
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows={4}
+                        placeholder="Your Message"
+                        onChange={formik.handleChange}
+                        value={formik.values.message}
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      />
+                      <span className="text-indigo-600 mt-2 inline-block">{formik.errors.message}</span>
+                    </div>
                   </div>
-                </div>
+                }
+
               </div>
               <div className="mt-10">
                 <button
                   type="submit"
                   disabled={formik.isSubmitting}
-                  className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
+                  className={`${formSubmit === true ? "bg-emerald-500 hover:bg-emerald-700 ease-in-out duration-300" : "duration-300 ease-in-out"} flex items-center justify-center w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                > 
+                  {formSubmit && <i class="fa-regular fa-circle-check text-white text-xl pr-2"></i>}
                   {buttonState}
                 </button>
 

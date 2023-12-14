@@ -1,6 +1,7 @@
 
 import NextImage from '@/components/NextImage';
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import BackHomeButton from '../../components/BackHomeButton';
 import Link from 'next/link'
 import NextBreadcrumb from '@/components/NextBreadcrumb'
 
@@ -15,9 +16,9 @@ export default function ProflexLiner() {
 
 
       <div className="relative bg-white">
-        <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
+        <div className="mx-auto max-w-7xl flex lg:flex-row flex-col-reverse lg:justify-between lg:px-8 xl:justify-end">
           <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-            <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+            <div className="relative lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
               <NextImage
                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
                 src="proflex-screenshot.png"
@@ -71,7 +72,7 @@ export default function ProflexLiner() {
 
                 </p>
 
-                <Link href="/" className="mt-6 inline-block pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4">Back to Home</Link>
+                <BackHomeButton />
               </div>
             </div>
           </div>
