@@ -19,7 +19,7 @@ export default function Hero({linkdIn, headingIcon, heading, ellipsis, descripti
                 }
               </div>
               {/* Heading  */}
-              <h1 className="lg:mt-24 mt-12 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
+              <h1>
                 {/* Heading Icon */}
                 {headingIcon &&
                   <i className={`${headingIcon} text-6xl text-indigo-500 mr-6`}></i>
@@ -33,9 +33,12 @@ export default function Hero({linkdIn, headingIcon, heading, ellipsis, descripti
               <p className="mt-6 text-lg leading-8 text-gray-400">
                 {description}
               </p>
+              {/* Skills References */}
               <div className="mt-16 flex items-center justify-space-around flex-wrap">
                 {skills.map((skill, key) => (
-                  <span key={skill} className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4">{skill}</span>
+                  (skill.link &&
+                  <a target="_blank" aria-label="Link opens in a new tab" href={skill.link} key={skill.name} className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 ease-in-out duration-300">{skill.name}</a>
+                  )
                 ))}
                 <span className="text-indigo-500 font-semibold px-6 py-4 leading-5  inline-block border-2 border-indigo-700 rounded-md mb-4">and more!</span>
               </div>

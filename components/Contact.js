@@ -58,7 +58,7 @@ export default function Contact({name, phone, email, message}) {
   }
 
     return (
-      <div id="contactForm" className="relative isolate bg-white px-6 pt-12 pb-24 lg:px-8">
+      <div id="contactForm" className="relative isolate bg-white px-6 pb-24 lg:px-8">
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
           aria-hidden="true"

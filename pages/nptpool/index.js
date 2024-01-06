@@ -1,13 +1,22 @@
 
 import NextImage from '@/components/NextImage';
-import NextBreadcrumb from '@/components/NextBreadcrumb'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import NextBreadcrumb from '@/components/NextBreadcrumb';
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
 import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
-import Link from 'next/link'
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
+
 export default function Swimmingpool() {
+
+  const seo = {
+    title: "NPTpool.com Project | Joe Doyle's Web Development Portfolio",
+    description: "Explore the NPTpool.com project in Joe Doyle's portfolio, highlighting web development excellence. Witness innovative design, flawless functionality, and user-centric solutions. Immerse yourself in the transformative journey at JoeDoyleRules.com.",
+  }
+  
   return (
     <>
+      <NextSeo title={seo.title} description={seo.description}/>
       <NextBreadcrumb
           homeElement={'Home'}
           separator={<span className="text-indigo-200"> | </span>}
