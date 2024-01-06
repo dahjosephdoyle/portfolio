@@ -90,7 +90,7 @@ export default function Home() {
     {
         name: "POOL360 Portal",
         href: "/pool360",
-        imageSrc: "/projects/POOL360-thumbnail.webp",
+        imageSrc: "/projects/pool360-thumbnail.webp",
         imageAlt: "POOL360 Portal project",
         description: "Customer portal project built using Next.js, Contentful CMS, and Tailwind CSS",
     },

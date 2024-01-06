@@ -29,7 +29,7 @@ export default function Swimmingpool() {
             <div className="relative lg:h-auto lg:w-full">
               <NextImage
                 className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
-                src="POOL360-screenshot.png"
+                src="pool360-screenshot.png"
                 alt=""
                 width={1080}
                 height={1280}
