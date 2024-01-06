@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to Vercel Action
-        uses: portfolio/deploy-to-vercel-action@v1
+        uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GH_PORTFOLIO }}
           VERCEL_TOKEN: ${{ secrets.V_PORTFOLIO }}
