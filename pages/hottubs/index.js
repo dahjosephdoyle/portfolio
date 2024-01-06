@@ -1,14 +1,20 @@
 
 import NextImage from '@/components/NextImage';
-import NextBreadcrumb from '@/components/NextBreadcrumb'
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import Link from 'next/link'
+import NextBreadcrumb from '@/components/NextBreadcrumb';
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '../../components/ContactMeButton';
-import Banner from '@/components/Banner'
-import Portfolio from '@/components/Portfolio'
+import Banner from '@/components/Banner';
+import Portfolio from '@/components/Portfolio';
+import { NextSeo } from 'next-seo';
 
 export default function HotTubs() {
+  const seo = {
+    title: "Hottubs.com Project | Joe Doyle's Web Development Portfolio",
+    description: "Discover the Hottubs.com project in Joe Doyle's portfolio. Explore web development expertise, seamless design, and user-centric experiences. Dive into JoeDoyleRules.com for a closer look",
+  }
+
   let bannerContent = {
     preheading: "Work Showcase",
     heading: "Portfolio",
@@ -63,6 +69,7 @@ export default function HotTubs() {
 ];
   return (
     <>
+    <NextSeo title={seo.title} description={seo.description}/>
     <NextBreadcrumb
           homeElement={'Home'}
           separator={<span className="text-indigo-200"> | </span>}

@@ -1,11 +1,18 @@
-import Image from 'next/image'
-import Hero from '@/components/Hero'
-import Banner from '@/components/Banner'
-import Portfolio from '@/components/Portfolio'
-import Contact from '@/components/Contact'
+import Image from 'next/image';
+import Hero from '@/components/Hero';
+import Banner from '@/components/Banner';
+import Portfolio from '@/components/Portfolio';
+import Contact from '@/components/Contact';
 import emailjs from '@emailjs/browser';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
+  
+  const seo = {
+    title: "Joe Doyle: Average Guy | Web Developer Extraordinaire",
+    description: "Visit joedoylerules.com for a concise showcase of Joe Doyle's web development portfolio. Explore clean designs and solid coding in a straightforward representation of skills and experience. Discover simplicity and functionality in web design at JoeDoyleRules.com",
+  }
+  
 
   const heroContent = {
     linkdIn: true,
@@ -13,7 +20,32 @@ export default function Home() {
     heading: "Hey, I'm Joe",
     ellipsis: true,
     description: "a not so average web developer and designer with proficiency in web languages and frameworks. I'm committed to practical solutions that meet industry standards and value collaboration. Please, explore my portfolio below for project insights.",
-    skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS", "Contentful CMS"],
+    skills: [
+      {
+        name: "HTML5",
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        name:"JavaScript",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        name: "React.js",
+        link: "https://react.dev/",
+      },
+      {
+        name: "Tailwind CSS",
+        link: "https://tailwindcss.com/",
+      },
+      {
+        name: "Contentful CMS",
+        link: "https://www.contentful.com/",
+      },
+    ],
     imageName: "family-photo.webp",
     imageAlt: "Joe's beautiful family",
   };
@@ -81,6 +113,7 @@ const contactForm = {
 
   return (
     <main>
+      <NextSeo title={seo.title} description={seo.description}/>
       <Hero
         linkdIn={heroContent.linkdIn}
         headingIcon={heroContent.headingIcon}

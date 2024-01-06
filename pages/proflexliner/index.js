@@ -3,12 +3,20 @@ import NextImage from '@/components/NextImage';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
 import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
-import Link from 'next/link'
-import NextBreadcrumb from '@/components/NextBreadcrumb'
+import Link from 'next/link';
+import NextBreadcrumb from '@/components/NextBreadcrumb';
+import { NextSeo } from 'next-seo';
 
 export default function ProflexLiner() {
+  
+  const seo = {
+    title: "ProflexLiner.com Project | Joe Doyle's Web Development Portfolio",
+    description: "Explore the web development prowess of Joe Doyle through the ProflexLiner.com project. Encounter practical design, smooth usability, and a user-centric approach. Delve into the details at JoeDoyleRules.com for a comprehensive view of this impactful project.",
+  }
+  
   return (
     <>
+      <NextSeo title={seo.title} description={seo.description}/>
       <NextBreadcrumb
         homeElement={'Home'}
         separator={<span className="text-indigo-200"> | </span>}

@@ -5,9 +5,18 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 import BackToPortfolioButton from '../../components/BackToPortfolioButton';
 import ContactMeButton from '@/components/ContactMeButton';
 import Link from 'next/link'
+import { NextSeo } from 'next-seo';
+
 export default function Swimmingpool() {
+  
+  const seo = {
+    title: "RegalChemicals.com Project | Joe Doyle's Web Development Portfolio",
+    description: "Discover Joe Doyle's web development expertise showcased in the RegalChemicals.com project. Experience functional design, seamless usability, and a user-centric approach. Dive into the details at JoeDoyleRules.com for a closer look at this impactful project.",
+  }
+  
   return (
     <>
+      <NextSeo title={seo.title} description={seo.description}/>
       <NextBreadcrumb
           homeElement={'Home'}
           separator={<span className="text-indigo-200"> | </span>}
