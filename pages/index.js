@@ -20,6 +20,10 @@ export default function Home() {
     heading: "Hey, I'm Joe",
     ellipsis: true,
     description: "a not so average web developer and designer with proficiency in web languages and frameworks. I'm committed to practical solutions that meet industry standards and value collaboration. Please, explore my portfolio below for project insights.",
+    cta: {
+      link: "#portfolio",
+      text: "View my Work"
+    },
     skills: [
       {
         name: "HTML5",
@@ -123,6 +127,7 @@ const contactForm = {
         skills={heroContent.skills}
         imageName={heroContent.imageName}
         imageAlt={heroContent.imageAlt}
+        cta={heroContent.cta}
       />
       <Banner 
         preheading={bannerContent.preheading} 

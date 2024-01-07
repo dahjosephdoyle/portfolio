@@ -1,6 +1,6 @@
 import NextImage from '@/components/NextImage';
 
-export default function Hero({linkdIn, headingIcon, heading, ellipsis, description, skills, imageName, imageAlt}) {
+export default function Hero({linkdIn, headingIcon, heading, ellipsis, description, skills, imageName, imageAlt, cta}) {
     return (
       <div className="relative bg-white">
         <div className="mx-auto grid grid-cols-12 lg:gap-x-8 container">
@@ -34,18 +34,20 @@ export default function Hero({linkdIn, headingIcon, heading, ellipsis, descripti
                 {description}
               </p>
               {/* Skills References */}
-              <div className="mt-16 flex items-center justify-space-around flex-wrap">
+              <div className="mt-16 lg:flex lg:items-center lg:justify-space-around lg:flex-wrap grid grid-cols-2">
                 {skills.map((skill, key) => (
                   (skill.link &&
-                  <a target="_blank" aria-label="Link opens in a new tab" href={skill.link} key={skill.name} className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white  mr-4 mb-4 hover:bg-indigo-800 ease-in-out duration-300">{skill.name}</a>
+                  <a target="_blank" aria-label="Link opens in a new tab" href={skill.link} key={skill.name} className="pointer-events-auto rounded-md bg-indigo-600 px-6 py-4 font-semibold leading-5 text-white lg:mt-0 lg:ml-0 lg:mr-4 mb-4 hover:bg-indigo-800 ease-in-out duration-300 lg:w-auto m-1 text-center col-span-1 flex items-center justify-center">{skill.name}</a>
                   )
                 ))}
-                <span className="text-indigo-500 font-semibold px-6 py-4 leading-5  inline-block border-2 border-indigo-700 rounded-md mb-4">and more!</span>
+                <span className="bg-slate-100 text-slate-500 font-semibold px-6 py-4 leading-5  inline-block border-2 border-slate-300 rounded-md mb-4 text-center col-span-2">and more!</span>
               </div>
-             
+              {cta &&
+                <a href={cta.link} className="block text-indigo-500 font-semibold px-6 py-4 leading-5 border-2 border-indigo-700 rounded-md mb-4 text-center mt-6 hover:bg-indigo-600 hover:text-white duration-300 ease-in-out">{cta.text}</a>
+              }
             </div>
           </div>
-          <div className="relative aspect-square lg:col-span-6 h-screen overflow-hidden col-span-12">
+          <div className="relative lg:aspect-square md:aspect-[3/4] aspect-square lg:col-span-6 overflow-hidden col-span-12 rounded-xl my-12 mx-auto">
             <NextImage
               className="w-full object-cover bg-gray-100"
               src={imageName}

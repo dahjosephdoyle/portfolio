@@ -185,9 +185,9 @@ export default function Contact({name, phone, email, message}) {
                 <button
                   type="submit"
                   disabled={formik.isSubmitting}
-                  className={`${formSubmit === true ? "bg-emerald-500 hover:bg-emerald-700 ease-in-out duration-300" : "duration-300 ease-in-out"} flex items-center justify-center w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                  className={`${formSubmit === true ? "bg-emerald-500 hover:bg-emerald-700 ease-in-out duration-300" : "duration-300 ease-in-out"} flex items-center justify-center w-full rounded-md bg-indigo-600 font-semibold px-6 py-4 leading-5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
                 > 
-                  {formSubmit && <i class="fa-regular fa-circle-check text-white text-xl pr-2"></i>}
+                  {formSubmit && <i className="fa-regular fa-circle-check text-white text-xl pr-2"></i>}
                   {buttonState}
                 </button>
 
