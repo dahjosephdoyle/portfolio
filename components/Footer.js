@@ -14,21 +14,21 @@ const navigation = {
         name: 'Facebook',
         href: 'https://www.facebook.com/TheJosephDoyle',
         icon: (props) => (
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
         ),
       },
       {
         name: 'linkedIn',
         href: 'https://www.linkedin.com/in/joseph-doyle-09463b75/',
         icon: (props) => (
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         ),
       },
       {
         name: 'GitHub',
         href: 'https://github.com/dahjosephdoyle/portfolio',
         icon: (props) => (
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
         ),
       },
     ],
@@ -43,7 +43,7 @@ const navigation = {
         <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
-            <i class="fa-regular fa-hand-horns text-4xl text-indigo-500 mr-6"></i>
+            <i className="fa-regular fa-hand-horns text-4xl text-indigo-500 mr-6"></i>
               <p className="text-sm leading-6 text-gray-300">
                 Revitalizing the online realm through the mindful development of individual websites.
               </p>
